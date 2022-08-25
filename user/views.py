@@ -1,6 +1,7 @@
 import random
 from unittest import result
 from .models import UserLog
+from .serializers import UserLogSerializer, AuthenticationSerializer
 from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import views, response, generics, status
 from rest_framework.utils import json
@@ -14,6 +15,7 @@ def send_otp(phone, otp):
     
 
 class SignInUp(generics.ListAPIView):
+    serializer_class = UserLogSerializer
     permission_classes = []
 
     def post(self, request):
@@ -63,6 +65,7 @@ class SignInUp(generics.ListAPIView):
 
 
 class CheckOtp(generics.ListAPIView):
+    serializer_class = AuthenticationSerializer
     permission_classes = []
 
     def put(self, request):
