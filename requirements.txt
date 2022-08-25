@@ -6,20 +6,62 @@
 #
 asgiref==3.5.2
     # via django
+certifi==2022.6.15
+    # via requests
+charset-normalizer==2.1.1
+    # via requests
+coreapi==2.3.3
+    # via drf-yasg
+coreschema==0.0.4
+    # via
+    #   coreapi
+    #   drf-yasg
 django==4.1
     # via
     #   -r requirements.in
     #   djangorestframework
     #   djangorestframework-simplejwt
+    #   drf-yasg
 djangorestframework==3.13.1
     # via
     #   -r requirements.in
     #   djangorestframework-simplejwt
+    #   drf-yasg
 djangorestframework-simplejwt==5.2.0
     # via -r requirements.in
+drf-yasg==1.21.3
+    # via -r requirements.in
+idna==3.3
+    # via requests
+inflection==0.5.1
+    # via drf-yasg
+itypes==1.2.0
+    # via coreapi
+jinja2==3.1.2
+    # via coreschema
+markupsafe==2.1.1
+    # via jinja2
+packaging==21.3
+    # via drf-yasg
 pyjwt==2.4.0
     # via djangorestframework-simplejwt
+pyparsing==3.0.9
+    # via packaging
 pytz==2022.2.1
-    # via djangorestframework
+    # via
+    #   djangorestframework
+    #   drf-yasg
+requests==2.28.1
+    # via coreapi
+ruamel-yaml==0.17.21
+    # via drf-yasg
+ruamel-yaml-clib==0.2.6
+    # via ruamel-yaml
 sqlparse==0.4.2
     # via django
+uritemplate==4.1.1
+    # via
+    #   coreapi
+    #   drf-yasg
+urllib3==1.26.12
+    # via requests
